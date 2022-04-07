@@ -1,0 +1,95 @@
+<%- include('partials/header') %>
+    <div class="container mt-5">
+        <h1>Register</h1>
+
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="card">
+                    <div class="card-body">
+
+                        <!-- Makes POST request to /register route -->
+                        <% if(designation==="student"){%>
+                            <form action="/student/register" method="POST">
+                                <div class="form-group">
+                                    <label for="string">Name</label>
+                                    <input type="name" class="form-control" name="name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" name="username">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input type="password" class="form-control" name="password">
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact">Contact</label>
+                                    <input type="contact" placeholder="888 888 8888" class="form-control" name="contact">
+                                </div>
+                                <div class="form-group">
+                                    <label for="year">Year</label>
+                                    <input type="year" class="form-control" name="year">
+                                </div>
+                                <div class="form-group">
+                                    <label for="roll">Roll</label>
+                                    <input type="roll" class="form-control" name="roll">
+                                </div>
+                                <div class="form-group">
+                                    <label for="subjects">Subjects</label><br>
+                                    <input type="checkbox" id="sub1" name="subjects" value="Physics">
+                                    <label for="sub1">Physics</label><br>
+                                    <input type="checkbox" id="sub2" name="subjects" value="Chemistry">
+                                    <label for="sub2">Chemistry</label><br>
+                                    <input type="checkbox" id="sub3" name="subjects" value="Maths">
+                                    <label for="sub3">Maths</label><br>
+                                    <input type="checkbox" id="sub4" name="subjects" value="Biology">
+                                    <label for="sub4">Biology</label><br>
+                                    <input type="checkbox" id="sub5" name="subjects" value="Computer">
+                                    <label for="sub5">Computer</label><br>
+                                    <input type="checkbox" id="sub6" name="subjects" value="Physical Education">
+                                    <label for="sub6">Physical Education</label><br>
+                                </div>
+                                <button type="submit" class="btn btn-dark">Register</button>
+                            </form>
+                            <%}%>
+                                <% if(designation==="teacher"){%>
+                                    <form action="/teacher/register" method="POST">
+                                        <div class="form-group">
+                                            <label for="name">Name</label>
+                                            <input type="text" class="form-control" name="name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email">Email</label>
+                                            <input type="email" class="form-control" name="username">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="password">Password</label>
+                                            <input type="password" class="form-control" name="password">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="contact">Contact</label>
+                                            <input type="tel" placeholder="888 888 8888" class="form-control" name="contact">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="subjects">Choose the Subject</label><br>
+                                            <select id="subjects" name="subjects">
+                                                <option value="Physics"> Physics</option>
+                                                <option value="Maths"> Maths</option>
+                                                <option value="Chemistry"> Chemistry</option>
+                                                <option value="Biology"> Biology</option>
+                                                <option value="Computer"> Computer</option>
+                                                <option value="Physical Education"> Physical Education</option>
+                                            </select>
+                                        </div>
+                                        <button type="submit" class="btn btn-dark">Register</button>
+                                    </form>
+                                    <%}%>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+
+    <%- include('partials/header') %>

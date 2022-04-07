@@ -1,0 +1,391 @@
+* {
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Lato";
+}
+
+.main-content {
+    display: flex;
+}
+
+.navbar {
+    border-right: 1px solid #bdbdbd;
+    flex: 0 0 20%;
+    height: 96.5vh;
+    padding: 2% 1%;
+    text-align: center;
+}
+
+li a {
+    border-radius: 10px;
+    color: #8a658f;
+    display: inline-block;
+    text-decoration: none;
+    padding: 3% 1%;
+    width: 75%;
+}
+
+li a:hover {
+    background-color: #e7cafc;
+    color: #b14efc;
+}
+
+.nav-log-out a {
+    border-radius: 10px;
+    color: #8a658f;
+    display: inline-block;
+    font-family: "Lato";
+    font-weight: 600;
+    margin-top: 6rem;
+    text-decoration: none;
+    padding: 3% 1.5%;
+    width: 70%;
+}
+
+.nav-log-out a:hover {
+    background-color: #e7cafc;
+    color: #b14efc;
+}
+
+.nav-brand {
+    color: #8a658f;
+    font-family: "Ubuntu";
+    margin-bottom: 7rem;
+}
+
+.menu-ex a {
+    padding-left: 1.3rem;
+}
+
+.menu-ex-li {
+    margin-right: 1rem;
+}
+
+.menu-cou a {
+    padding-right: 0.7rem;
+}
+
+.menu-cou-li {
+    margin-right: 1rem;
+}
+
+.menu-se a {
+    padding-right: 0.8rem;
+}
+
+.menu-se-li {
+    margin-right: 1rem;
+}
+
+.log-li {
+    margin-right: 1rem;
+}
+
+.nav-log-out a {
+    padding-right: 0.9rem;
+}
+
+li {
+    font-family: "Lato";
+    font-weight: 600;
+    list-style: none;
+    margin: 6% auto;
+}
+
+.content {
+    flex: 0 0 80%;
+    padding: 2% 4%;
+    width: 100%;
+}
+
+.content input {
+    border: 0.5px solid #888;
+    border-radius: 15px;
+    bottom: 0.45rem;
+    margin-right: 1.5%;
+    padding: 1%;
+    position: relative;
+    width: 40%;
+}
+
+.content input:focus {
+    outline-width: 0;
+}
+
+.content button {
+    border: 0;
+    border-radius: 10px;
+    color: #8a658f;
+    display: inline-block;
+    font-size: 2rem;
+    margin: auto;
+    padding: 0.5%;
+}
+
+.content button:hover {
+    color: #aa689f;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.search-bar {
+    flex: 0 0 85%;
+    text-align: center;
+}
+
+.user-disp {
+    display: flex;
+    flex: 0 0 15%;
+}
+
+.user-disp a {
+    color: #8a658f;
+    text-decoration: none;
+}
+
+.user-disp a:hover {
+    color: #aa689f;
+}
+
+.bell-icon {
+    display: inline-block;
+    font-size: 170%;
+    margin-top: 2%;
+}
+
+.user-icon {
+    display: inline-block;
+    font-size: 175%;
+    margin-top: 2%;
+}
+
+.menu {
+    display: inline-block;
+    margin-right: 6%;
+}
+
+.hamburger {
+    color: #8a658f;
+    display: none;
+}
+
+.hamburger span {
+    display: inline-block;
+    margin-left: 0.5rem;
+    margin-top: 1.3rem;
+}
+
+.ending {
+    background-color: #8a658f;
+    bottom: 0;
+    color: white;
+    font-family: "Montserrat";
+    padding: 0.5%;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+.againdisp {
+    visibility: collapse;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    z-index: +1;
+}
+
+@media (max-width:1000px) {
+    .flex-container {
+        text-align: center;
+        width: 100%;
+    }
+    .mydisp {
+        display: none;
+    }
+    .active {
+        width: 35%;
+        box-shadow: 2px 2px 7px #888;
+        position: fixed;
+        z-index: +2;
+    }
+    .hamburger {
+        display: contents;
+    }
+    .showdisp {
+        visibility: visible !important;
+    }
+    .nav-brand {
+        font-size: 94%;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100vh;
+    flex-wrap: no-wrap;
+}
+
+.container div {
+    width: 50%;
+    height: 200px;
+}
+
+.picture {
+    background: #4451c2;
+}
+
+.text {
+    background: #f451c2;
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+    .container div {
+        width: 100%;
+    }
+}
+
+.class-flex {
+    display: flex;
+    margin: 0.6% auto;
+}
+
+.time-div {
+    flex: 10%;
+}
+
+.class-flex-card {
+    flex: 90%;
+    display: flex;
+    border-radius: 5px;
+    border: 1.5px dotted #888;
+    padding: 0.5%;
+    margin-left: 1%;
+}
+
+.flex-card-sister {
+    flex: 70%;
+}
+
+.flex-card-brother {
+    flex: 35%;
+    display: flex;
+}
+
+.flex-card-brother form {
+    margin: 1% 2%;
+}
+
+.assignment-form {
+    padding: 1%;
+    margin: 1%;
+}
+
+.form-group {
+    width: 60%;
+    display: flex;
+    margin: 2% auto;
+}
+
+.form-group label {
+    flex: 0%;
+    font-weight: bold;
+}
+
+.form-group input {
+    flex: 10%;
+}
+
+#reg-btn {
+    background-color: #f4f4f4;
+    color: #8a658f;
+    font-size: 1rem;
+    display: block;
+    margin: 2% auto;
+    border: 1px solid #8a658f;
+    border-radius: 5px;
+    padding: 1% 2%;
+}
+
+#reg-btn:hover {
+    background-color: #8a658f;
+    color: #f4f4f4;
+}
+
+#sch-btn {
+    background-color: #f4f4f4;
+    color: #8a658f;
+    font-size: 0.9rem;
+    display: inline-block;
+    text-decoration: none;
+    margin: 2% auto;
+    border: 1px solid #8a658f;
+    border-radius: 5px;
+    padding: 4% 5%;
+}
+
+#sch-btn:hover {
+    background-color: #8a658f;
+    color: #f4f4f4;
+}
+
+.over-table td {
+    padding: 4% 8%;
+    width: 15vw;
+}
+
+.assignment-container {
+    height: 35vw;
+    overflow-y: scroll;
+}
+
+.assignment-card-container {
+    display: inline-block;
+    padding: 1%;
+    border: 1px dotted #888;
+    border-radius: 5px;
+}
+
+.poll-form {
+    display: flex;
+}
+
+.poll-form input {
+    display: inline-block;
+    width: 2vw;
+    margin-top: 4.5%;
+}
+
+.atten-table {
+    border-collapse: collapse;
+    /* border: 1px solid #333; */
+}
+
+.atten-table td,
+.atten-table tr,
+.atten-table th {
+    border: 1px solid #333;
+    width: 8vw;
+}
+
+.p-menu {
+    margin-right: 6%;
+    margin-left: -15%;
+}
