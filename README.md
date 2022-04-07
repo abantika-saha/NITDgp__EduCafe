@@ -46,9 +46,3 @@ other properly and effectively. Some of the features it includes are:
 - Providing user the ability to customize their dashboard according to their convenience.
 - Providing Readable format of the pdfs and the documents in multi languages which will aid the illiterate people to understand the idea presented in these documents.
 - Introduce **Virtual Reality** for more engaged learning!
-
-## Team Name: EduCafe (Institute Name: National Institute of Technology, Durgapur)  
-- Abantika Saha
-- Akshat Bhatnagar
-- Arka Seth
-- Madaka Purna Sai Prasanth
